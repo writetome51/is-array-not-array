@@ -1,0 +1,30 @@
+{
+  "name": "@writetome51/is-array-not-array",
+  "version": "1.0.0",
+  "description": "2 functions that check if argument is or is not array",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/writetome51/is-array-not-array.git"
+  },
+  "keywords": [
+    "is",
+    "not",
+    "array",
+    "type-checking",
+    "type",
+    "check",
+    "data-type"
+  ],
+  "author": "Steve Thompson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/writetome51/is-array-not-array/issues"
+  },
+  "homepage": "https://github.com/writetome51/is-array-not-array#readme",
+  "dependencies": {
+  }
+}
