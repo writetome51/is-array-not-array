@@ -1,6 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var isArray_notArray_1 = require("../isArray_notArray");
+import {isArray, notArray} from './index.js';
+
+
 var nonArrayValues = [1, '', 'hello', undefined, null, false, {}, function () {
     }];
 var valuesThatAreArrays = [[], [1], ['', 1, false, {}], [{}, {}]];
@@ -8,7 +8,7 @@ var results = [];
 // Test 1:
 // This must return false each time to pass:
 for (var i = 0; i < nonArrayValues.length; ++i) {
-    results.push(isArray_notArray_1.isArray(nonArrayValues[i]));
+    results.push(isArray(nonArrayValues[i]));
 }
 if (results.includes(undefined))
     console.log('test 1: failed.');
@@ -20,7 +20,7 @@ else if (results.length === nonArrayValues.length)
 // This must return true each time to pass:
 results = [];
 for (var i = 0; i < valuesThatAreArrays.length; ++i) {
-    results.push(isArray_notArray_1.isArray(valuesThatAreArrays[i]));
+    results.push(isArray(valuesThatAreArrays[i]));
 }
 if (results.length === valuesThatAreArrays.length && !(results.includes(undefined))
     && !(results.includes(false)) && results.includes(true))
@@ -31,7 +31,7 @@ else
 // This must return false each time to pass:
 results = [];
 for (var i = 0; i < valuesThatAreArrays.length; ++i) {
-    results.push(isArray_notArray_1.notArray(valuesThatAreArrays[i]));
+    results.push(notArray(valuesThatAreArrays[i]));
 }
 if (results.length === valuesThatAreArrays.length && !(results.includes(undefined))
     && !(results.includes(true)) && results.includes(false))
@@ -42,7 +42,7 @@ else
 // This must return true each time to pass:
 results = [];
 for (var i = 0; i < nonArrayValues.length; ++i) {
-    results.push(isArray_notArray_1.notArray(nonArrayValues[i]));
+    results.push(notArray(nonArrayValues[i]));
 }
 if (results.length === nonArrayValues.length && !(results.includes(undefined))
     && !(results.includes(false)) && results.includes(true))

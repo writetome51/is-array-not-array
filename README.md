@@ -7,10 +7,6 @@
 `npm i  @writetome51/is-array-not-array`
 
 ## Loading
-```
-// if using TypeScript:
+```js
 import { isArray, notArray} from '@writetome51/is-array-not-array';
-// if using ES5 JavaScript:
-var  isArray = require('@writetome51/is-array-not-array').isArray;
-var  notArray = require('@writetome51/is-array-not-array').notArray;
 ```

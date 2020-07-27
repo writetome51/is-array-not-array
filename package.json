@@ -1,6 +1,7 @@
 {
   "name": "@writetome51/is-array-not-array",
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "type": "module",
   "description": "2 functions that check if argument is or is not array",
   "main": "index.js",
   "scripts": {
